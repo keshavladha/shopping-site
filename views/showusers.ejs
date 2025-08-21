@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <style>
+    table ,th,td{
+        border:1px solid black;
+    }
+    </style>
+</head>
+<body>
+   <table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <th>first_name</th>
+    <th>last_name</th>
+    <th>email</th>
+    <th>address</th>
+    <th>city</th>
+    <th>state</th>
+    <th>zip</th>
+  </tr>
+
+  <% for(let user of payment) { %>
+    <tr>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.address %></td>
+      <td><%= user.city %></td>
+      <td><%= user.state %></td>
+      <td><%= user.zip %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>
+
